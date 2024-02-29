@@ -14,4 +14,14 @@
 число 32.
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+const dayNumber = +prompt("Введите целое число в интервале [1, 32)");
+
+if (dayNumber > 0 && dayNumber < 11) {
+    console.log(`Число ${dayNumber} попадает в 1-ю декаду месяца`);
+  } else if (dayNumber > 10 && dayNumber < 21) {
+    console.log(`Число ${dayNumber} попадает в 2-ю декаду месяца`);
+  } else if (dayNumber > 20 && dayNumber < 32) {
+    console.log(`Число ${dayNumber} попадает в 3-ю декаду месяца`);
+} else {
+console.log(`Неверное значение`);
+}

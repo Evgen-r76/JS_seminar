@@ -23,4 +23,8 @@
 Подсказка: Возможно, вам понадобится округление чисел и оператор %.
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+const userNumber = +prompt("Введите число:");
+const hundreds = Math.trunc((userNumber % 1000) / 100);
+const dozens = Math.trunc((userNumber % 100) / 10);
+const units = Math.trunc(userNumber % 10);
+alert(`В числе ${userNumber} количество сотен: ${hundreds}, десятков: ${dozens}, единиц: ${units}`);
