@@ -12,4 +12,8 @@ xxxx
 xxxxx
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+var floor = "x";
+console.log(floor);
+for (var floorNum = 0; floorNum < 19; floorNum++) {
+  console.log((floor += "xx"));
+}

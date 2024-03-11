@@ -14,12 +14,18 @@
 не окажется, значит нужно будет вывести пустой массив.
 */
 const mas = [];
+const mas1 = [];
+let masSum = 0;
 for (let index = 0; index < 5; index++) {
   mas.push(Math.floor(Math.random() * 10));
+  masSum = masSum + mas[index];
 
-  if (mas[index] % 3 === 0) {
-    console.log(mas[index]);
+  if (mas[index] === 3) {
+    mas1.push(index);
   }
 }
 console.log(mas);
-// Здесь пишем решение, данный комментарий необходимо стереть.
+console.log('Сумма элементов массива = ', masSum);
+console.log('Минимальное значение в массиве = ' , Math.min(...mas));
+console.log('Новый массив, содержащий индексы сгенерированного выше массива, в которых значение равно 3' , mas1);
+
